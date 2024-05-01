@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -14,6 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 200px;
+    min-width: 500px;
 }
 
 .header-logo {
@@ -32,7 +34,7 @@ body {
 }
 
 .hero-text {
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -50,6 +52,7 @@ body {
 }
 
 .information {
+    flex: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,12 +64,12 @@ body {
 }
 
 .info {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    justify-content: space-between;
-    text-align: center;
     align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
 }
 
 .info-text-header {
@@ -78,10 +81,9 @@ body {
 .info-details {
     flex: 1;
     display: flex;
-    justify-content: space-between;
     padding: 24px;
-    gap: 24px;
-
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .image-border {
@@ -93,7 +95,57 @@ body {
 
 .info-text {
     font-size: 18px;
-    color: #E5E7EB;
+    color: gray;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    background: #E5E7EB;
+    min-width: 500px;
+}
+
+.footer-main-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.footer-sub-text {
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+p {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+    margin: 0;
+}
+
+.person {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer {
+    padding: 50px 200px;
+}
+
+.footer-boundary {
+    padding: 16px 72px;
+    background: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-button {
+    border: 2px white solid;
 }
 
 a {
